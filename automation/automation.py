@@ -13,6 +13,7 @@ def find_emails():
         # return emails
     with open(email_write_path, 'w') as writer:
         for email in emails:
+            # logic for removing dupes
             writer.write(email + '\n')
 
 print(find_emails())
